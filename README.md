@@ -22,6 +22,7 @@ Supported by **[UWP2Win32](https://github.com/basharast/UWP2Win32)**
 - Improved files browser
 - Fixed few issues with retroachievements
 - Other minor fixes related to (Windows Legacy builds, Touch and UWP)
+- Support launch by file or URI
 
 
 ## Help
