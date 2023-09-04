@@ -1,7 +1,10 @@
 # DuckStation-UWP (ARM)
-Fast PlayStation 1 emulator for Windows ARM32 (UWP) with min 15035
+Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 
-Support GPUs with DirectX 11 Feature Level 10+ (Level 9.3 and build 14393 is not ready yet)
+## Compatibility 
+- Windows Build (15035+)
+- DirectX 11 Feature Level 10+
+- DirectX 11 Feature Level 9.3 (Partially, Software render)
 
 ## Overview:
 [DuckStation](https://github.com/stenzek/duckstation) is PS1 emulator by [Connor McLaughlin](https://github.com/stenzek) (stenzek)
