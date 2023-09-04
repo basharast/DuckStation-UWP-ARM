@@ -5,6 +5,7 @@ Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 - Windows Build (15035+)
 - DirectX 11 Feature Level 10+
 - DirectX 11 Feature Level 9.3 (Partially, Software render)
+- Don't enable recompiler option still not working
 
 ## Overview:
 [DuckStation](https://github.com/stenzek/duckstation) is PS1 emulator by [Connor McLaughlin](https://github.com/stenzek) (stenzek)
