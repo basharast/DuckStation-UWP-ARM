@@ -12,6 +12,7 @@ After few tests it worked good on `Adreno 330` but slow on `Adreno 305`
 
 GPUs `Adreno 400+` are perfect and they will work with full speed.
 
+## Screenshots
 <details>
 <summary>Screenshots</summary>
 <img src="https://github.com/basharast/DuckStation-UWP-ARM/assets/3244951/2b1b1f81-2d41-45bf-8862-0c010725cab8" width="760"/>
