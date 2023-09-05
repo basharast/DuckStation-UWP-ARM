@@ -47,6 +47,8 @@ Supported by **[UWP2Win32](https://github.com/basharast/UWP2Win32)**
 
 Checkout the official documentation ([Click here](https://github.com/stenzek/duckstation/wiki))
 
+Read more about the custom features ([Click here](https://github.com/basharast/DuckStation-UWP-ARM/wiki))
+
 
 ## Note
 
