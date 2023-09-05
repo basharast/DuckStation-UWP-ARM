@@ -7,6 +7,20 @@ Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 - DirectX 11 Feature Level 9.3 (Partially, Software render)
 - Don't enable recompiler option still not working
 
+## Performance
+After few tests it worked good on `Adreno 330` but slow on `Adreno 305`
+
+GPUs `Adreno 400+` are perfect and they will work with full speed.
+
+<details>
+<summary>Screenshots</summary>
+<img src="https://github.com/basharast/DuckStation-UWP-ARM/assets/3244951/2b1b1f81-2d41-45bf-8862-0c010725cab8" width="760"/>
+<img src="https://github.com/basharast/DuckStation-UWP-ARM/assets/3244951/5fd26bb4-3a2c-477c-922a-4a0284dd8a7f" width="250"/>
+<img src="https://github.com/basharast/DuckStation-UWP-ARM/assets/3244951/8637920b-34e6-4da3-bf1e-0ac4ff687a62" width="250"/>
+<img src="https://github.com/basharast/DuckStation-UWP-ARM/assets/3244951/b1e61420-86f9-4816-ba7a-9ac39a404c52" width="250"/>
+</details>
+
+
 ## Overview:
 [DuckStation](https://github.com/stenzek/duckstation) is PS1 emulator by [Connor McLaughlin](https://github.com/stenzek) (stenzek)
 
