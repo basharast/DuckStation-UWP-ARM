@@ -10,6 +10,8 @@ Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 ## Performance
 After few tests it worked good on `Adreno 330` but slow on `Adreno 305`
 
+You may achieve better performance by manipulating Speed options
+
 GPUs `Adreno 400+` are perfect and they will work with full speed.
 
 ## Screenshots
