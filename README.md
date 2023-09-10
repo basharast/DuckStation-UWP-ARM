@@ -4,7 +4,7 @@ Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 ## Compatibility 
 - Windows Build (15035+)
 - DirectX 11 Feature Level 10+
-- DirectX 11 Feature Level 9.3 (Partially, Software render)
+- DirectX 11 Feature Level 9.1 (Partially, Software render)
 - Don't enable recompiler option still not working
 
 ## Performance
