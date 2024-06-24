@@ -10,7 +10,7 @@ Fast PlayStation 1 emulator for Windows (ARM32) UWP
 
 ## ARM64 or Latest
 - This repo for ARM32, legacy support only
-- Please resolve that with the original developer not here.
+- Please resolve the ARM64 or whatsoever with the original developer not here.
 - Please don't ask or contact me for other than ARM32
 - This repo is not meant to be up-to date fork (nor redistribution)
 
