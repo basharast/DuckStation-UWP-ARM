@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Microsoft.Windows.CppWinRT.2.0.230706.1\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('..\..\packages\Microsoft.Windows.CppWinRT.2.0.230706.1\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <Import Project="..\..\dep\msvc\vsprops\Configurations.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugFast|ARM">
+      <Configuration>DebugFast</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugFast|ARM64">
+      <Configuration>DebugFast</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugFast|Win32">
+      <Configuration>DebugFast</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugFast|x64">
+      <Configuration>DebugFast</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUWP|ARM">
+      <Configuration>DebugUWP</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTCG|ARM">
+      <Configuration>ReleaseLTCG</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTCG|ARM64">
+      <Configuration>ReleaseLTCG</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTCG|Win32">
+      <Configuration>ReleaseLTCG</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTCG|x64">
+      <Configuration>ReleaseLTCG</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUWP|ARM">
+      <Configuration>ReleaseUWP</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUWP|ARM64">
+      <Configuration>DebugUWP</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUWP|Win32">
+      <Configuration>DebugUWP</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUWP|x64">
+      <Configuration>DebugUWP</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUWP|ARM64">
+      <Configuration>ReleaseUWP</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUWP|Win32">
+      <Configuration>ReleaseUWP</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUWP|x64">
+      <Configuration>ReleaseUWP</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <CppWinRTOptimized>false</CppWinRTOptimized>
+    <CppWinRTRootNamespaceAutoMerge>false</CppWinRTRootNamespaceAutoMerge>
+    <MinimalCoreWin>true</MinimalCoreWin>
+    <ProjectGuid>{e2a6cea9-9537-4c61-b637-81f1f17ef638}</ProjectGuid>
+    <ProjectName>duckstation-uwp</ProjectName>
+    <RootNamespace>DuckStationUWP</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <CppWinRTGenerateWindowsMetadata>false</CppWinRTGenerateWindowsMetadata>
+    <CppWinRTOptimized>false</CppWinRTOptimized>
+    <CppWinRTRootNamespaceAutoMerge>false</CppWinRTRootNamespaceAutoMerge>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IntDir>$(SolutionDir)build\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)build\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <GenerateProjectSpecificOutputFolder>false</GenerateProjectSpecificOutputFolder>
+    <TargetName>$(ProjectName)</TargetName>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>arm</AppxBundlePlatforms>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <PackageCertificateThumbprint>9F65A72F7B7496B7C77B690DE22E285EB35D102E</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <Import Project="..\..\dep\msvc\vsprops\Toolkit.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugUWP|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugFast|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseLTCG|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="PropertySheet.props" />
+    <Import Project="..\..\packages\Microsoft.Windows.CppWinRT.2.0.230706.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\..\packages\Microsoft.Windows.CppWinRT.2.0.230706.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
+  </ImportGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <PreprocessorDefinitions>NO_RAW;__arm__;VIXL_INCLUDE_TARGET_A64;CPU_AARCH64;WITH_RECOMPILER;WIN32_LEAN_AND_MEAN;WINRT_LEAN_AND_MEAN;_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING;_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="..\..\dep\msvc\vsprops\Base.props" />
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\logo.png" />
+    <Image Include="Assets\duck_128.png" />
+    <Image Include="Assets\LargeTile.scale-100.png" />
+    <Image Include="Assets\LargeTile.scale-125.png" />
+    <Image Include="Assets\LargeTile.scale-150.png" />
+    <Image Include="Assets\LargeTile.scale-200.png" />
+    <Image Include="Assets\LargeTile.scale-400.png" />
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\SmallTile.scale-100.png" />
+    <Image Include="Assets\SmallTile.scale-125.png" />
+    <Image Include="Assets\SmallTile.scale-150.png" />
+    <Image Include="Assets\SmallTile.scale-200.png" />
+    <Image Include="Assets\SmallTile.scale-400.png" />
+    <Image Include="Assets\SplashScreen.scale-100.png" />
+    <Image Include="Assets\SplashScreen.scale-125.png" />
+    <Image Include="Assets\SplashScreen.scale-150.png" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\SplashScreen.scale-400.png" />
+    <Image Include="Assets\Square150x150Logo.scale-100.png" />
+    <Image Include="Assets\Square150x150Logo.scale-125.png" />
+    <Image Include="Assets\Square150x150Logo.scale-150.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-400.png" />
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png" />
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png" />
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png" />
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png" />
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png" />
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-32.png" />
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Image Include="Assets\Square44x44Logo.scale-100.png" />
+    <Image Include="Assets\Square44x44Logo.scale-125.png" />
+    <Image Include="Assets\Square44x44Logo.scale-150.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-400.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-32.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Image Include="Assets\StoreLogo.scale-100.png" />
+    <Image Include="Assets\StoreLogo.scale-125.png" />
+    <Image Include="Assets\StoreLogo.scale-150.png" />
+    <Image Include="Assets\StoreLogo.scale-200.png" />
+    <Image Include="Assets\StoreLogo.scale-400.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Image Include="Assets\WideTile.scale-100.png" />
+    <Image Include="Assets\WideTile.scale-125.png" />
+    <Image Include="Assets\WideTile.scale-150.png" />
+    <Image Include="Assets\WideTile.scale-200.png" />
+    <Image Include="Assets\WideTile.scale-400.png" />
+    <Image Include="resources\address-book-new.png" />
+    <Image Include="resources\applications-system.png" />
+    <Image Include="resources\duck.png" />
+    <Image Include="resources\flag-eu.png" />
+    <Image Include="resources\flag-jp.png" />
+    <Image Include="resources\flag-uc.png" />
+    <Image Include="resources\media-cdrom.png" />
+    <Image Include="resources\multimedia-player.png" />
+    <Image Include="resources\star-0.png" />
+    <Image Include="resources\star-1.png" />
+    <Image Include="resources\star-2.png" />
+    <Image Include="resources\star-3.png" />
+    <Image Include="resources\star-4.png" />
+    <Image Include="resources\star-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UWP2Win32\LaunchItem.cpp" />
+    <ClCompile Include="UWP2Win32\StorageExtensions.cpp" />
+    <ClCompile Include="UWP2Win32\StorageHandler.cpp" />
+    <ClCompile Include="UWP2Win32\StoragePath.cpp" />
+    <ClCompile Include="UWP2Win32\UWP2C.cpp" />
+    <ClCompile Include="uwp_host_interface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="database\gamedb.json">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="database\gamesettings.ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="duckstation-uwp.pfx" />
+    <None Include="inputprofiles\DualShock 4.ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="inputprofiles\Keyboard (No Numpad).ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="inputprofiles\Keyboard.ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="inputprofiles\PlayStation Classic Controller.ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="inputprofiles\Xbox Controller 1.ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="inputprofiles\Xbox Controller 2.ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="inputprofiles\Xbox Controller 3.ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="inputprofiles\Xbox Controller 4.ini">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PropertySheet.props" />
+    <None Include="shaders\Cccalibrator.glsl">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="shaders\dolphinfx\bloom.glsl">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="shaders\dolphinfx\celshading.glsl">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="shaders\dolphinfx\scanlines.glsl">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="shaders\simple-brightness.glsl">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="shaders\simple-gamma.glsl">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="shaders\simple-sharpen.glsl">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UWP2Win32\LaunchItem.h" />
+    <ClInclude Include="UWP2Win32\pch.h" />
+    <ClInclude Include="UWP2Win32\StorageExtensions.h" />
+    <ClInclude Include="UWP2Win32\StorageHandler.h" />
+    <ClInclude Include="UWP2Win32\StorageInfo.h" />
+    <ClInclude Include="UWP2Win32\StorageLog.h" />
+    <ClInclude Include="UWP2Win32\StoragePath.h" />
+    <ClInclude Include="UWP2Win32\StorageWin32.h" />
+    <ClInclude Include="UWP2Win32\UWP2C.h" />
+    <ClInclude Include="uwp_host_interface.h" />
+    <ClInclude Include="uwp_key_map.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\fa-solid-900.ttf" />
+    <Font Include="resources\roboto-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="database\chtdb.txt" />
+    <Text Include="database\gamecontrollerdb.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="database\compatibility.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CommonDataFiles Include="$(SolutionDir)data\**\*.*">
+      <InProject>false</InProject>
+    </CommonDataFiles>
+  </ItemGroup>
+  <Target Name="CopyCommonDataFiles" BeforeTargets="PrepareForBuild" Inputs="@(CommonDataFiles)" Outputs="@(CommonDataFiles -> '$(ProjectDir)%(RecursiveDir)%(Filename)%(Extension)')">
+    <Message Text="Copying common data files" Importance="High" />
+    <Copy SourceFiles="@(CommonDataFiles)" DestinationFolder="$(ProjectDir)\%(RecursiveDir)" SkipUnchangedFiles="true" />
+  </Target>
+  <Import Project="..\frontend-common\frontend-common.props" />
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>$(RootBuildDir)frontend-common\frontend-common.lib;$(RootBuildDir)vixl\vixl.lib;onecore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|ARM'">stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|ARM'">$(SolutionDir)src\duckstation-uwp\UWP2Win32;$(SolutionDir)src\duckstation-uwp\Generated Files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|ARM'">Default</LanguageStandard_C>
+    </ClCompile>
+    <ClCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|x64'">$(SolutionDir)src\duckstation-uwp\UWP2Win32;$(SolutionDir)src\duckstation-uwp\Generated Files;$(SolutionDir)dep\simpleini\include;$(SolutionDir)dep\tinyxml2\include;$(SolutionDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|ARM'">xcopy /Y "$(ProjectDir)VC\arm\*.*" "$(OutDir)\"
+xcopy /Y "$(ProjectDir)VC\arm\*.*" "$(OutDir)PackageLayout\"</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|ARM'">
+      </Command>
+    </PreLinkEvent>
+    <CustomBuildStep>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|ARM'">
+      </Command>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='DebugUWP|ARM'">$(SolutionDir)src\duckstation-uwp\UWP2Win32;$(SolutionDir)src\duckstation-uwp\Generated Files;%(AdditionalIncludeDirectories);$(SolutionDir)dep\simpleini\include;$(SolutionDir)dep\tinyxml2\include;$(SolutionDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='ReleaseUWP|ARM64'">$(SolutionDir)src\duckstation-uwp\UWP2Win32;$(SolutionDir)src\duckstation-uwp\Generated Files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="..\..\dep\msvc\vsprops\Targets.props" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Windows.CppWinRT.2.0.230706.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Windows.CppWinRT.2.0.230706.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.Windows.CppWinRT.2.0.230706.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Windows.CppWinRT.2.0.230706.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+  </Target>
+</Project>

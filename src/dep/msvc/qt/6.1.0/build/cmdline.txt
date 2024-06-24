@@ -1,0 +1,5 @@
+..\qt-everywhere-src-6.1.0\configure -debug-and-release -schannel -prefix C:/build/qt-6.1.0-x64
+
+..\qt-everywhere-src-6.1.0\configure -debug-and-release -schannel -prefix C:/build/qt-6.1.0-arm64 -qt-host-path C:/build/qt-6.1.0-x64 -- -DCMAKE_TOOLCHAIN_FILE=C:/build/win32-arm64-toolchain.txt
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsamd64_arm64.bat"

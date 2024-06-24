@@ -1,0 +1,43 @@
+﻿  common_host_interface.cpp
+  controller_interface.cpp
+  d3d11_host_display.cpp
+  fullscreen_ui.cpp
+  fullscreen_ui_progress_callback.cpp
+  game_database.cpp
+  game_list.cpp
+  game_settings.cpp
+  host_settings.cpp
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\dep\vixl\include\vixl\aarch32\instructions-aarch32.h(303,41): warning C4389: '==': signed/unsigned mismatch
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\dep\vixl\include\vixl\aarch32\instructions-aarch32.h(971,58): warning C4389: '==': signed/unsigned mismatch
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\dep\vixl\include\vixl\aarch32\macro-assembler-aarch32.h(402,19): warning C4459: declaration of 'pc' hides global declaration
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\dep\vixl\include\vixl\aarch32\macro-assembler-aarch32.h(430,13): warning C4459: declaration of 'pc' hides global declaration
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\dep\vixl\include\vixl\aarch32\macro-assembler-aarch32.h(464,13): warning C4459: declaration of 'pc' hides global declaration
+  icon.cpp
+  imgui_impl_dx11.cpp
+  inhibit_screensaver.cpp
+  ini_settings_interface.cpp
+  input_overlay_ui.cpp
+  postprocessing_chain.cpp
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\src\frontend-common\inhibit_screensaver.cpp(114,3): warning C4065: switch statement contains 'default' but no 'case' labels
+  postprocessing_shader.cpp
+  postprocessing_shadergen.cpp
+  save_state_selector_ui.cpp
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\dep\vixl\include\vixl\utils-vixl.h(1142,24): warning C4244: '+=': conversion from 'int64_t' to 'int', possible loss of data
+  xaudio2_audio_stream.cpp
+  xinput_controller_interface.cpp
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\src\frontend-common\fullscreen_ui.cpp(1595,100): warning C4389: '!=': signed/unsigned mismatch
+D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\src\frontend-common\fullscreen_ui.cpp(3824,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+common.lib(image.obj) : warning LNK4006: stbi_write_jpg already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_jpg_to_func already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_png_to_func already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_png already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_png_to_mem already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_zlib_compress already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_hdr already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_hdr_to_func already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_tga already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_tga_to_func already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_bmp already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_write_bmp_to_func already defined in stb.lib(stb_image_write.obj); second definition ignored
+common.lib(image.obj) : warning LNK4006: stbi_flip_vertically_on_write already defined in stb.lib(stb_image_write.obj); second definition ignored
+  frontend-common.vcxproj -> D:\Developement\Development Hub\duckstation_uwp\duckstation_uwp\build\ReleaseUWP-ARM\frontend-common\frontend-common.lib
