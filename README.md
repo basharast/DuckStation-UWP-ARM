@@ -1,5 +1,5 @@
-# DuckStation-UWP (ARM)
-Fast PlayStation 1 emulator for Windows ARM32 (UWP)
+# DuckStation-UWP (ARM32)
+Fast PlayStation 1 emulator for Windows (ARM32) UWP
 
 
 ## Compatibility 
