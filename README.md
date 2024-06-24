@@ -8,10 +8,12 @@ Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 - DirectX 11 Feature Level 9.1 (Partially, Software render)
 - Don't enable recompiler option still not working
 
-## Surface (ARM64)
-- Please note Qualcomm and Windows are no longer support ARM32 (which what I do)
-- My work is focus on legacy support for older devices and ARM devices that still support ARM32
+## ARM64 or Latest
+- This repo for ARM32, legacy support only
 - Please resolve that with the original developer not here.
+- Please don't ask or contact me for other than ARM32
+- This repo is not meant to be up-to date fork (nor redistribution)
+
 
 ## Performance
 After few tests it worked good on `Adreno 330` but slow on `Adreno 305`
