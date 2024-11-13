@@ -32,10 +32,6 @@ GPUs `Adreno 400+` are perfect and they will work with full speed.
 </details>
 
 
-## Overview:
-[DuckStation](https://github.com/stenzek/duckstation) is PS1 emulator
-
-
 ## UWP Support
 Supported by **[UWP2Win32](https://github.com/basharast/UWP2Win32)**
 
@@ -86,11 +82,3 @@ like project `util`, I guess also `fmt`, in anycase you got that `.lib` is missi
 
 go to Dependencies and build it manually (Right click, Build)
 
-
-# Credits
-
-Connor McLaughlin (stenzek) DuckStation Emulator
-
-ImGui (Dear ImGui) [Omar](https://github.com/ocornut/imgui)
-
-Bashar Astifan (UWP Storage manager and other UWP improvements)
