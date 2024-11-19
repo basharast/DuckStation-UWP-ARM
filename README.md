@@ -55,18 +55,6 @@ Read about features and performance tips ([Click here](https://github.com/bashar
 
 # Build 
 
-If you are going to build this for modern hardware, better to use the official repo
-
-there are certain changes added for testing the performance on older hardware
-
-before you start note the following:
-
-- This port meant for older hardware which use ARM32.
-
-- Don't post any issue related to other than ARM32
-
-## Steps
-
 Ensure to have:
 - SDK: 10240, 17763, 19041
 - Visual Studio 2022 ( with platform tools v143)
