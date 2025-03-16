@@ -14,6 +14,8 @@ Fast PlayStation 1 emulator for Windows (ARM32) UWP
 - Please don't ask or contact me for other than ARM32
 - This repo is not meant to be up-to date fork (nor redistribution)
 
+## XBOX (x64)
+Please visit [XBOX DevStore](https://xbdev.store/)
 
 ## Performance
 After few tests it worked good on `Adreno 330` but slow on `Adreno 305`
