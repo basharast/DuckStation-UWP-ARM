@@ -1,3 +1,10 @@
+> ⚠️⚠️⚠️
+
+> This project no longer maintained nor within my interests!.<br/>
+> I'm moving toward [ImMobile](https://github.com/basharast/ImMobile) environment and [ImLibretro](https://github.com/basharast/ImLibretro).
+
+---
+
 # DuckStation-UWP (ARM32)
 Fast PlayStation 1 emulator for Windows (ARM32) UWP
 
