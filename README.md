@@ -5,7 +5,18 @@
 
 ---
 
-# DuckStation-UWP (ARM32)
+✨✨ PCSX-ReARMed. now available at [ImLibretro](https://github.com/basharast/ImLibretro) ✨✨
+
+PCSX-ReARMed benefits over DuckStation
+- Faster (Full speed)
+- NEON upscaler
+- JIT/Recompiler
+- Works well on low-end hardware
+- Less headache and doesn't require too much options
+
+---
+
+# DuckStation-UWP (ARM32 - ⚠️Outdated⚠️)
 Fast PlayStation 1 emulator for Windows (ARM32) UWP
 
 
@@ -17,8 +28,7 @@ Fast PlayStation 1 emulator for Windows (ARM32) UWP
 
 ## ARM64 or Latest
 - This repo for ARM32, legacy support only
-- Please resolve the ARM64 or whatsoever with the original developer not here.
-- Please don't ask or contact me for other than ARM32
+- I'm no longer maintaining this project, please DON'T contact me about it
 - This repo is not meant to be up-to date fork (nor redistribution)
 
 ## XBOX (x64)
